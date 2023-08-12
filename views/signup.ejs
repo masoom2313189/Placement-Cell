@@ -4,37 +4,61 @@
     <%- include('_bootstrap_meta')%>
     <title>Sign Up</title>
   </head>
-  <body style="background-color: #e6e9e9">
+  <body>
       <%- include('_header')%>
-    <div class="w-50px mx-auto mt-5" style="display: grid; place-content: center; width: 530px; background: white;
-    border-radius: 5px;
-    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);">
-      <div class="mx-auto mt-3 mb-4" style="width: 100px">
+    <div class="w-50 mx-auto mt-5 border border-dark"       style="padding: 20px;">
+      <div class="mx-auto mt-3 mb-4" style="width: 200px">
         <h4>Sign Up</h4>
       </div>
       <div class="mb3">
-        <form action="/users/create" method="post" >
+        <form action="/users/create" method="post">
 
           <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required/>
+          <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          placeholder="John Doe"
+          required
+          />
         </div>
 
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="abc@gmail.com" name="email" required />
+          <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="abc@email.com"
+          name="email"
+          required
+          />
         </div>
 
         <div class="mb-3">
           <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password" name="password" required />
+          <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          required
+          />
         </div>
 
         <div class="mb-3">
           <label for="Password" class="form-label">Confirm Password</label>
-          <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required />
+          <input
+          type="password"
+          class="form-control"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+          />
         </div>
         <div class="mb-4 mt-3" style="display: flex; justify-content: center">
-          <button type="submit" class="btn btn-primary btn-block mb-4">Sign Up</button>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
         </div>
       </form>
       <div class="mx-auto mb-3 mt-3" style="width: 300px">

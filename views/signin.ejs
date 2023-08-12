@@ -5,59 +5,53 @@
 
     <title>Sign In</title>
   </head>
-  <body style="background-color: #e6e9e9">
+  <body>
     <%- include('_header')%>
     <div
-      class="w-50 mx-auto mt-5"
+      class="w-50 border border-dark mx-auto mt-5"
       style="
-        display: grid;
-        place-content: center;
-        width: 530px;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
-        box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       "
     >
       <div class="mx-auto mt-3 mb-3" style="width: 100px">
         <h4>Sign In</h4>
       </div>
 
-      <form action="/users/create-session" method="POST" style="width: 300px">
-        <!-- Email input -->
-        <div class="form-outline mb-4">
-          <label class="form-label" for="email">Enter Email</label>
+      <form class="w-50 mx-auto" action="/users/create-session" method="POST">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
           <input
             type="email"
             class="form-control"
             id="email"
-            placeholder="abc@gmail.com"
+            placeholder="abc@email.com"
             name="email"
             required
           />
         </div>
 
-        <!-- Password input -->
-        <div class="form-outline mb-4">
-          <label class="form-label" for="password">Enter Password</label>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
           <input
             type="password"
-            id="password"
             class="form-control"
+            id="password"
             name="password"
             required
           />
         </div>
 
-        <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block mb-4">
-          Sign in
-        </button>
-
-        <!-- Register buttons -->
-        <div class="text-center">
-          <p>No Account? <a href="/users/signup">Register</a></p>
+        <div style="display: flex; justify-content: center">
+          <button type="submit" class="btn btn-primary">Log In</button>
         </div>
       </form>
+
+      <div class="mx-auto mb-3 mt-3" style="width: 300px">
+        <a href="/users/signup" style="margin-left: 90px">Sign Up Instead</a>
+      </div>
     </div>
     <%- include('_bootstrap_script')%>
   </body>

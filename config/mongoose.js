@@ -1,12 +1,10 @@
 const mongoose = require("mongoose");
+mongoose.connect(process.env.MONGO_URL);
 
-mongoose.connect("mongodb://127.0.0.1:27017/placement_cell");
 const db = mongoose.connection;
 
-db.on("error", console.error.bind(console, "Error in connecting to MongoDB"));
+db.on("error", console.error.bind(console, "db connection error"));
 
-db.once("open", function () {
-  console.log("Connected to Database :: Mongodb");
+db.once("open", () => {
+  console.log("Successfully connected to the db");
 });
-
-module.exports = mongoose;

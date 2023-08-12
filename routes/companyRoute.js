@@ -1,30 +1,30 @@
-const express = require("express");
-const passport = require("passport");
-const companyController = require("../controllers/companyController");
+const express = require('express');
+const passport = require('passport');
+const companyController = require('../controllers/companyController');
 const router = express.Router();
 
-//  Get requests
+// -------- Get requests ----------
 router.get(
-  "/home",
+  '/home',
   passport.checkAuthentication,
   companyController.companyPage
 );
 
 router.get(
-  "/allocate",
+  '/allocate',
   passport.checkAuthentication,
   companyController.allocateInterview
 );
 
-//  Post Requests
+// -------- Post Requests ---------
 
 router.post(
-  "/schedule-interview",
+  '/schedule-interview',
   passport.checkAuthentication,
   companyController.scheduleInterview
 );
 router.post(
-  "/update-status/:id",
+  '/update-status/:id',
   passport.checkAuthentication,
   companyController.updateStatus
 );

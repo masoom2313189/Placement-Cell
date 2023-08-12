@@ -1,26 +1,26 @@
-const express = require("express");
-const passport = require("passport");
+const express = require('express');
+const passport = require('passport');
 
 const router = express.Router();
 
-const studentController = require("../controllers/studentController");
+const studentController = require('../controllers/studentController');
 
-// Get requests
+// ------------------ Get requests ------------
 router.get(
-  "/create",
+  '/create',
   passport.checkAuthentication,
   studentController.createStudentPage
 );
 
 router.get(
-  "/delete/:id",
+  '/delete/:id',
   passport.checkAuthentication,
   studentController.deleteStudent
 );
 
-// Posts Requests
+// ------------------- Posts Requests ----------
 router.post(
-  "/create-student",
+  '/create-student',
   passport.checkAuthentication,
   studentController.createStudent
 );
