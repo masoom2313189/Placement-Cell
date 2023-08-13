@@ -8,7 +8,7 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "sahil",
+  "author": "Masoom",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",

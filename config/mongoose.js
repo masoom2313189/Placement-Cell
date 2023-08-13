@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
-mongoose.connect(
-  "mongodb+srv://masoom2313189:WOyyNqFC2LrVEHMb@cluster0.tjrblio.mongodb.net/"
-);
+mongoose.connect(process.env.MONGO_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const db = mongoose.connection;
 
