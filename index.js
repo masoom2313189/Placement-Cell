@@ -14,7 +14,7 @@ app.set("view engine", "ejs");
 app.set("views", "./views");
 app.use(
   session({
-    secret: process.env.SECRET,
+    secret: "mynameismasoomrizviandiamdeployingtheplacementcellapp",
     resave: false,
     saveUninitialized: false,
     cookie: { maxAge: 1000 * 60 * 100 },
