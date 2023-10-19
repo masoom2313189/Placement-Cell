@@ -1,3 +1,6 @@
+# Live
+https://placement-cell-51y4.onrender.com/
+
 # Coding Ninjas Placement Cell
 
 An interface for coding ninjas placement cell to keep records of students and schedule interviews with different companies
@@ -11,17 +14,8 @@ An interface for coding ninjas placement cell to keep records of students and sc
 
 ## Screenshots
 
-- Sign Up
-  ![Sign Up](/images/sign_up.png)
+![image](https://github.com/masoom2313189/Placement-Cell/assets/105916377/d81cacb3-d07d-45e6-ae23-99e5530bcad0)
 
-- Sign In
-  ![Sign In](/images/sign_in.png)
-
-- Student Page
-  ![Student Page](/images/student_list.png)
-
-- Interview Page
-  ![Interview Page](/images/interview_list.png)
 
 ## Tech Stack
 
